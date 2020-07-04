@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to the Login Screen!</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="login">
+            <div data-role="header">
+                <h1>Thunderscouts 2020</h1>
+            </div>
+            <div data-role="main", class="ui-content">
+                <form>
+                    <div class="ui-field-contain">
+                         <label for="firstname">First name:</label>
+                         <input type="text" name="firstname" id="firstname" value="">
+                    </div>
+                    <div class="ui-field-contain">
+                         <label for="lastinitial">Last Initial:</label>
+                         <input type="text" data-clear-btn="true" name="lastinitial" id="lastinitial" value="">
+                    </div>
+                </form>
+                <div id="loginDiv"><button id="loginButton">Login</button></div>
+            </div>
+            <div data-role="footer">
+                <p>&copy; Sam Against Scratch 2020</p>
+            </div>
+        </div>
+
+        <!--PREMATCH PAGE-->
+
+        <div data-role="page" id="prematch">
+            <div data-role="header">
+                <h1>Pre-match Page</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#prematch">Pre-match</a></li>
+                        <li><a href="#auto">Auto</a></li>
+                        <li><a href="#teleop">Teleop</a></li>
+                        <li><a href="#endgame">Endgame</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="main", class="ui-content">
+                <form>
+                    <div class="ui-field-contain">
+                         <label for="teamnum">Team number:</label>
+                         <input type="number" name="teamnum" id="teamnum" value="">
+                    </div>
+                    <div class="ui-field-contain">
+                         <label for="matchnum">Match Number:</label>
+                         <input type="text" data-clear-btn="true" name="matchnum" id="matchnum" value="">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="alliancecolor">Alliance Color:</label>
+                        <select name="alliancecolor" id="alliancecolor" data-mini="true">
+                            <option value="1"> </option>
+                            <option value="2">Red</option>
+                            <option value="3">Blue</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div data-role="footer">
+                <p>&copy; Sam Against Scratch 2020</p>
+            </div>
+        </div>
+
+        <!--AUTO PAGE-->
+
+        <div data-role="page" id="auto">
+            <div data-role="header">
+                <h1>Auto Page</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#prematch">Pre-match</a></li>
+                        <li><a href="#auto">Auto</a></li>
+                        <li><a href="#teleop">Teleop</a></li>
+                        <li><a href="#endgame">Endgame</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="main", class="ui-content">
+                <form>
+                    <div class="ui-field-contain">
+                         <label for="cellspreloaded">Cells Preloaded:</label>
+                         <input type="range" name="cellspreloaded" id="cellspreloaded" min="0" max="3" value="0">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="startingpos">Starting Position:</label>
+                        <select name="startingpos" id="startingpos" data-mini="true">
+                            <option value="1"> </option>
+                            <option value="2">Position 1</option>
+                            <option value="3">Position 2</option>
+                            <option value="4">Position 3</option>
+                        </select>
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="directionmoved">Direction Moved:</label>
+                        <select name="directionmoved" id="directionmoved" data-mini="true">
+                            <option value="1"> </option>
+                            <option value="2">Forwards</option>
+                            <option value="3">Backwards</option>
+                            <option value="4">None</option>
+                        </select>
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="trenchcollected">Trench Cells Collected:</label>
+                        <input type="range" name="trenchcollected" id="trenchcollected" min="0" max="5" value="0">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="enemycollected">Enemy Trench Cells Collected:</label>
+                        <input type="range" name="enemycollected" id="enemycollected" min="0" max="5" value="0">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="shieldgencellscollected">Shield Gen Cells Collected:</label>
+                        <input type="range" name="shieldgencellscollected" id="shieldgencellscollected" min="0" max="5" value="0">
+                    </div>
+                </form>
+            </div>
+            <div data-role="footer">
+                <p>&copy; Sam Against Scratch 2020</p>
+            </div>
+        </div>
+
+
+
+        <div data-role="page" id="teleop">
+            <div data-role="header">
+                <h1>Teleop Page</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#prematch">Pre-match</a></li>
+                        <li><a href="#auto">Auto</a></li>
+                        <li><a href="#teleop">Teleop</a></li>
+                        <li><a href="#endgame">Endgame</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="main", class="ui-content">
+                
+            </div>
+            <div data-role="footer">
+                <p>&copy; Sam Against Scratch 2020</p>
+            </div>
+        </div>
+
+
+
+        <div data-role="page" id="endgame">
+            <div data-role="header">
+                <h1>Endgame Page</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#prematch">Pre-match</a></li>
+                        <li><a href="#auto">Auto</a></li>
+                        <li><a href="#teleop">Teleop</a></li>
+                        <li><a href="#endgame">Endgame</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="main", class="ui-content">
+                
+            </div>
+            <div data-role="footer">
+                <p>&copy; Sam Against Scratch 2020</p>
+            </div>
+        </div>
+
+
+
+        <div data-role="page" id="reports">
+            <div data-role="header">
+                <h1>Reports Page</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#prematch">Pre-match</a></li>
+                        <li><a href="#auto">Auto</a></li>
+                        <li><a href="#teleop">Teleop</a></li>
+                        <li><a href="#endgame">Endgame</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="main", class="ui-content">
+                
+            </div>
+            <div data-role="footer">
+                <p>&copy; Sam Against Scratch 2020</p>
+            </div>
+        </div>
+
+        <script src="ThunderscoutsFunctionality.js"></script>
+    </body>
+</html>
