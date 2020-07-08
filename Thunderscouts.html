@@ -5,8 +5,11 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="Thunderstyles.css" />
     </head>
     <body>
+
+        <!--LOGIN PAGE-->
 
         <div data-role="page" id="login">
             <div data-role="header">
@@ -16,14 +19,16 @@
                 <form>
                     <div class="ui-field-contain">
                          <label for="firstname">First name:</label>
-                         <input type="text" name="firstname" id="firstname" value="">
+                         <input type="text" data-clear-btn="true" name="firstname" id="firstname" value="">
                     </div>
                     <div class="ui-field-contain">
                          <label for="lastinitial">Last Initial:</label>
                          <input type="text" data-clear-btn="true" name="lastinitial" id="lastinitial" value="">
                     </div>
                 </form>
-                <div id="loginDiv"><button id="loginButton">Login</button></div>
+                <div id="loginDiv">
+                    <button class="smallButton" id="loginButton">Login</button>
+                </div>
             </div>
             <div data-role="footer">
                 <p>&copy; Sam Against Scratch 2020</p>
@@ -121,6 +126,13 @@
                         <label for="shieldgencellscollected">Shield Gen Cells Collected:</label>
                         <input type="range" name="shieldgencellscollected" id="shieldgencellscollected" min="0" max="5" value="0">
                     </div>
+                    <div class="ui-field-contain">
+                        <label for="increaseAutoBottomScored">Auto Power Cells Scored:</label>
+                        <label for="increaseAutoBottomScored">0</label>
+                        <button class="smallButton" id="decreaseAutoBottomScored">-</button>
+                        <label for="increaseAutoBottomScored">Bottom Port</label>
+                        <button class="smallButton" id="increaseAutoBottomScored">+</button>
+                    </div>
                 </form>
             </div>
             <div data-role="footer">
@@ -128,7 +140,7 @@
             </div>
         </div>
 
-
+        <!--TELEOP PAGE-->
 
         <div data-role="page" id="teleop">
             <div data-role="header">
@@ -151,7 +163,7 @@
             </div>
         </div>
 
-
+        <!--ENDGAME PAGE-->
 
         <div data-role="page" id="endgame">
             <div data-role="header">
@@ -174,7 +186,7 @@
             </div>
         </div>
 
-
+        <!--REPORTS PAGE-->
 
         <div data-role="page" id="reports">
             <div data-role="header">

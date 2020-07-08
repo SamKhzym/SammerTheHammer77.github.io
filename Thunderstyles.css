@@ -1,4 +1,7 @@
-button {
+div button.smallButton, #decreaseAutoBottomScored, #increaseAutoBottomScored {
     display: inline-block;
-    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    align-content: center;
 }
