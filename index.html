@@ -16,20 +16,24 @@
                 <form>
                     <div class="ui-field-contain">
                          <label for="firstname">First name:</label>
-                         <input type="text" name="firstname" id="firstname" value="">
+                         <input type="text" name="firstname" id="firstname" onchange="firstnamefunc()" value="">
                     </div>
                     <div class="ui-field-contain">
                          <label for="lastinitial">Last Initial:</label>
-                         <input type="text" data-clear-btn="true" name="lastinitial" id="lastinitial" value="">
+                         <input type="text" data-clear-btn="true" name="lastinitial" id="lastinitial" onchange="lastnamefunc()" value="">
                     </div>
                 </form>
-                <div id="loginDiv"><button id="loginButton">Login</button></div>
+                <div id="loginDiv"><button type="submit" id="loginButton">Login</button></div>
             </div>
             <div data-role="footer">
                 <p>&copy; Sam Against Scratch 2020</p>
             </div>
         </div>
 
+        <script>
+
+                
+                </script>
         <!--PREMATCH PAGE-->
 
         <div data-role="page" id="prematch">
@@ -49,15 +53,15 @@
                 <form>
                     <div class="ui-field-contain">
                          <label for="teamnum">Team number:</label>
-                         <input type="number" name="teamnum" id="teamnum" value="">
+                         <input type="number" name="teamnum" id="teamnum" onchange="teamnumfunc()" value="">
                     </div>
                     <div class="ui-field-contain">
                          <label for="matchnum">Match Number:</label>
-                         <input type="text" data-clear-btn="true" name="matchnum" id="matchnum" value="">
+                         <input type="text" data-clear-btn="true" name="matchnum" id="matchnum"  onchange="matchnumfunc()" value="">
                     </div>
                     <div class="ui-field-contain">
                         <label for="alliancecolor">Alliance Color:</label>
-                        <select name="alliancecolor" id="alliancecolor" data-mini="true">
+                        <select name="alliancecolor" id="alliancecolor" onchange="alliancecolorfunc()" data-mini="true">
                             <option value="1"> </option>
                             <option value="2">Red</option>
                             <option value="3">Blue</option>
@@ -89,11 +93,11 @@
                 <form>
                     <div class="ui-field-contain">
                          <label for="cellspreloaded">Cells Preloaded:</label>
-                         <input type="range" name="cellspreloaded" id="cellspreloaded" min="0" max="3" value="0">
+                         <input type="range" name="cellspreloaded" onchange="cellspreloadedfunc()" id="cellspreloaded" min="0" max="3" value="0">
                     </div>
                     <div class="ui-field-contain">
                         <label for="startingpos">Starting Position:</label>
-                        <select name="startingpos" id="startingpos" data-mini="true">
+                        <select name="startingpos" id="startingpos" onchange="startingposfunc()" data-mini="true">
                             <option value="1"> </option>
                             <option value="2">Position 1</option>
                             <option value="3">Position 2</option>
@@ -102,7 +106,7 @@
                     </div>
                     <div class="ui-field-contain">
                         <label for="directionmoved">Direction Moved:</label>
-                        <select name="directionmoved" id="directionmoved" data-mini="true">
+                        <select name="directionmoved" id="directionmoved" onchange="directionmovedfunc()" data-mini="true">
                             <option value="1"> </option>
                             <option value="2">Forwards</option>
                             <option value="3">Backwards</option>
@@ -111,15 +115,15 @@
                     </div>
                     <div class="ui-field-contain">
                         <label for="trenchcollected">Trench Cells Collected:</label>
-                        <input type="range" name="trenchcollected" id="trenchcollected" min="0" max="5" value="0">
+                        <input type="range" name="trenchcollected" id="trenchcollected" onchange="trenchcollectedfunc()" min="0" max="5" value="0">
                     </div>
                     <div class="ui-field-contain">
                         <label for="enemycollected">Enemy Trench Cells Collected:</label>
-                        <input type="range" name="enemycollected" id="enemycollected" min="0" max="5" value="0">
+                        <input type="range" name="enemycollected" id="enemycollected" onchange="enemycollectedfunc()" min="0" max="5" value="0">
                     </div>
                     <div class="ui-field-contain">
                         <label for="shieldgencellscollected">Shield Gen Cells Collected:</label>
-                        <input type="range" name="shieldgencellscollected" id="shieldgencellscollected" min="0" max="5" value="0">
+                        <input type="range" name="shieldgencellscollected" id="shieldgencellscollected" onchange="shieldgencollectedfunc()" min="0" max="5" value="0">
                     </div>
                 </form>
             </div>
@@ -144,7 +148,16 @@
                 </div>
             </div>
             <div data-role="main", class="ui-content">
-                
+                <form>
+
+
+
+
+
+
+
+
+                </form>
             </div>
             <div data-role="footer">
                 <p>&copy; Sam Against Scratch 2020</p>
@@ -167,10 +180,25 @@
                 </div>
             </div>
             <div data-role="main", class="ui-content">
-                
+                <form>
+                    <div class="ui-field-contain">
+                        <h1>Climb Achieved</h1 >
+                        <input type="radio" name="climbAchieved" id="noClimb" value="noClimb">
+                        <label for="noClimb">No Climb</label><br>
+                        <input type="radio" id="failedClimb" name="climbAchieved" value="failedClimb">
+                        <label for="failedClimb">Failed Climb</label><br>
+                        <input type="radio" id="climbAndMove" name="climbAchieved" value="climbAndMove">
+                        <label for="climbAndMove">Climb and Move</label><br>
+                        <input type="radio" id="climbAndLevel" name="climbAchieved" value="climbAndLevel">
+                        <label for="climbAndLevel">Cimbed and Level</label>
+                    
+                     </div>
+                </form>
             </div>
+
+                
             <div data-role="footer">
-                <p>&copy; Sam Against Scratch 2020</p>
+                <p>&copy;  Scratch Against Sam 2020</p>
             </div>
         </div>
 
@@ -190,6 +218,10 @@
                 </div>
             </div>
             <div data-role="main", class="ui-content">
+                <form>
+                    <input type="submit" value="Check" />
+                </form>
+
                 
             </div>
             <div data-role="footer">
