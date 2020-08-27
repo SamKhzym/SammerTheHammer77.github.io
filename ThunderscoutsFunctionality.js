@@ -11,6 +11,7 @@ var directionMoved = document.getElementById("directionmoved")
 var trenchCollected = document.getElementById("trenchcollected")
 var enemyCollected = document.getElementById("enemycollected")
 var shieldGenCollected = document.getElementById("shieldgencellscollected")
+var 
 
 
 // THANK YOU!
